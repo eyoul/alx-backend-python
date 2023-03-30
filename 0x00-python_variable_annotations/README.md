@@ -5,11 +5,11 @@
 ## General
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-## Type annotations in Python 3
-## How you can use type annotations to specify function signatures and variable types
-## Duck typing
-## How to validate your code with mypy
-## Tasks :page_with_curl:
+* Type annotations in Python 3
+* How you can use type annotations to specify function signatures and variable types
+* Duck typing
+* How to validate your code with mypy
+* Tasks :page_with_curl:
 
 * **0. Basic annotations - add**
   * [0-add.py](./0-add.py): Write a type-annotated function add that takes a float a and a float b as arguments and returns their sum as a float.
@@ -28,10 +28,10 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 * **4. Define variables**
   * [4-define_variables.py](./4-define_variables.py): Define and annotate the following variables with the specified values:
 
-    ## a, an integer with a value of 1
-    ## pi, a float with a value of 3.14
-    ## i_understand_annotations, a boolean with a value of True
-    ## school, a string with a value of “Holberton”
+    * a, an integer with a value of 1
+    * pi, a float with a value of 3.14
+    * i_understand_annotations, a boolean with a value of True
+    * school, a string with a value of “Holberton”
 
 * **5. Complex types - list of floats**
   * [5-sum_list.py](./5-sum_list.py):Write a type-annotated function sum_list which takes a list input_list of floats as argument and returns their sum as a float.
