@@ -3,7 +3,7 @@
 from typing import Any, Union, Sequence
 
 
-def safe_first_element(lst: Sequence[Any]) -> Union[Any,None]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """types of the elements of the input are not know"""
     if lst:
         return lst[0]
