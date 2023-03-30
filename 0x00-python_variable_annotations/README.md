@@ -1,5 +1,14 @@
 # 0x00. Python - Variable Annotations
 <img src="https://i.redd.it/y9y25tefi5401.png" alt="" loading="lazy" style="">
+
+# Learning Objectives
+## General
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+## Type annotations in Python 3
+## How you can use type annotations to specify function signatures and variable types
+## Duck typing
+## How to validate your code with mypy
 ## Tasks :page_with_curl:
 
 * **0. Basic annotations - add**
@@ -19,10 +28,10 @@
 * **4. Define variables**
   * [4-define_variables.py](./4-define_variables.py): Define and annotate the following variables with the specified values:
 
-    a, an integer with a value of 1
-    pi, a float with a value of 3.14
-    i_understand_annotations, a boolean with a value of True
-    school, a string with a value of “Holberton”
+    ## a, an integer with a value of 1
+    ## pi, a float with a value of 3.14
+    ## i_understand_annotations, a boolean with a value of True
+    ## school, a string with a value of “Holberton”
 
 * **5. Complex types - list of floats**
   * [5-sum_list.py](./5-sum_list.py):Write a type-annotated function sum_list which takes a list input_list of floats as argument and returns their sum as a float.
@@ -39,42 +48,42 @@
    
 * **9. Let's duck type an iterable object**
   * [9-element_length.py](./9-element_length.py): Annotate the below function’s parameters and return values with the appropriate types
-    """
-    ""
+    ````
+    ```
     def element_length(lst):
         return [(i, len(i)) for i in lst]
-    ""
-    """
+    ```
+    ````
    
 * **10. Duck typing - first element of a sequence**
   * [100-safe_first_element.py](./100-safe_first_element.py): Augment the following code with the correct duck-typed annotations:
-    """
-    ""
+    ````
+    ```
     # The types of the elements of the input are not know
     def safe_first_element(lst):
         if lst:
             return lst[0]
         else:
             return None
-    ""
-    """
+    ```
+    ````
 * **11. More involved type annotations**
   * [101-safely_get_value.py](./101-safely_get_value.py):Given the parameters and the return values, add type annotations to the function
 
 Hint: look into TypeVar
-    """
-    ""
+    ````
+    ```
     def safely_get_value(dct, key, default = None):
         if key in dct:
             return dct[key]
         else:
             return default
-    ""
-    """  
+    ```
+    ```` 
 * **12. Type Checking**
   * [102-type_checking.py](./102-type_checking.py): Use mypy to validate the following piece of code and apply any necessary changes.
-    """
-    ""
+    ````
+    ```
     def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
         zoomed_in: Tuple = [
             item for item in lst
@@ -88,5 +97,5 @@ Hint: look into TypeVar
     zoom_2x = zoom_array(array)
 
     zoom_3x = zoom_array(array, 3.0)
-    ""
-    """
+    ```
+    ````
