@@ -6,7 +6,8 @@ Click to show/hide file contents
 Click to show/hide file contents
 * fixtures.py [(or download)](https://intranet-projects-files.s3.amazonaws.com/webstack/fixtures.py)
 Click to show/hide file contents
-0. Parameterize a unit test
+
+## 0. Parameterize a unit test
 
     Familiarize yourself with the utils.access_nested_map function and understand its purpose. Play with it in the Python console to make sure you understand.
 
