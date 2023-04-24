@@ -7,7 +7,7 @@ from unittest.mock import patch
 from utils import access_nested_map, get_json, memoize
 from typing import Mapping, Sequence, Any
 from parameterized import parameterized
- 
+
 
 class TestAccessNestedMap(unittest.TestCase):
     """the first unit test for utils.access_nested_map
@@ -25,7 +25,7 @@ class TestAccessNestedMap(unittest.TestCase):
         """
         response = access_nested_map(nested_map, path)
         self.assertEqual(response, expected)
-    
+
     @parameterized.expand([
         ({}, ("a",)),
         ({"a": 1}, ("a", "b"))
