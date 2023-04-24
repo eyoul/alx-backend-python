@@ -1,10 +1,10 @@
 # 0x03. Unittests and Integration Tests
 # Required Files
-utils.py [(or download)] (https://intranet-projects-files.s3.amazonaws.com/webstack/utils.py)
+* utils.py [(or download)](https://intranet-projects-files.s3.amazonaws.com/webstack/utils.py)
 Click to show/hide file contents
-client.py [(or download)] (https://intranet-projects-files.s3.amazonaws.com/webstack/client.py)
+* client.py [(or download)](https://intranet-projects-files.s3.amazonaws.com/webstack/client.py)
 Click to show/hide file contents
-fixtures.py [(or download)] (https://intranet-projects-files.s3.amazonaws.com/webstack/fixtures.py)
+* fixtures.py [(or download)](https://intranet-projects-files.s3.amazonaws.com/webstack/fixtures.py)
 Click to show/hide file contents
 0. Parameterize a unit test
 
