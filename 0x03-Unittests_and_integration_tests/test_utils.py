@@ -62,22 +62,24 @@ class TestGetJson(unittest.TestCase):
         moke_requests_get.assert_called_once_with(test_url)
 
 
-class TestGetJson(unittest.TestCase):
-    """Mock HTTP calls
-       test to get_json function
+class TestMemoize(unittest.TestCase):
     """
-    @parameterized.expand([
-        ("http://example.com", {"payload": True}),
-        ("http://holberton.io", {"payload": False})
-    ])
-    @patch("requested.get")
-    def test_get_json(self, test_url, test_payload, json, moke_requests_get):
-        """test_get_json method expected output
-           Args:
-                url: url to send http request
-                plaload: expected json response
+    Test the memoization decorator, memoize
+    """
+    def test_memoize(self):
         """
-        moke_requests_get.return_value.json.return_value = test_payload
-        result = get_json(test_url)
-        self.assertEqual(result, test_payload)
-        moke_requests_get.assert_called_once_with(test_url)
+        Test that utils.memoize decorator works as intended
+        """
+        class TestClass:
+
+            def a_method(self):
+                return 42
+
+            @memoize
+            def a_property(self):
+                return self.a_method()
+        with patch.object(TestClass, 'a_method') as mock_object:
+            test = TestClass()
+            test.a_property()
+            test.a_property()
+            mock_object.assert_called_once()
