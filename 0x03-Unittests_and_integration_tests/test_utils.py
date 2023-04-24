@@ -60,3 +60,24 @@ class TestGetJson(unittest.TestCase):
         result = get_json(test_url)
         self.assertEqual(result, test_payload)
         moke_requests_get.assert_called_once_with(test_url)
+
+
+class TestGetJson(unittest.TestCase):
+    """Mock HTTP calls
+       test to get_json function
+    """
+    @parameterized.expand([
+        ("http://example.com", {"payload": True}),
+        ("http://holberton.io", {"payload": False})
+    ])
+    @patch("requested.get")
+    def test_get_json(self, test_url, test_payload, json, moke_requests_get):
+        """test_get_json method expected output
+           Args:
+                url: url to send http request
+                plaload: expected json response
+        """
+        moke_requests_get.return_value.json.return_value = test_payload
+        result = get_json(test_url)
+        self.assertEqual(result, test_payload)
+        moke_requests_get.assert_called_once_with(test_url)
